@@ -3,7 +3,7 @@ import Card from "../Card";
 
 const LoadingCard = props => (
   <Card>
-    <h1>Loading...</h1>
+    <h2>Loading...</h2>
   </Card>
 );
 

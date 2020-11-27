@@ -5,7 +5,7 @@ import { FaEnvelope, FaPhone } from "react-icons/fa";
 
 const colors = ["red", "yellow", "green", "blue"];
 
-const LoadingCard = ({ data, index }) => {
+const UserCard = ({ data, index }) => {
   const color = colors[index % colors.length];
   return (
     <Card>
@@ -19,4 +19,4 @@ const LoadingCard = ({ data, index }) => {
     </Card>
   );
 };
-export default LoadingCard;
+export default UserCard;

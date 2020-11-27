@@ -3,7 +3,7 @@ import Card from "../Card";
 
 const ErrorCard = props => (
   <Card>
-    <h1>Error!</h1>
+    <h2>Oh no, something went wrong!</h2>
   </Card>
 );
 

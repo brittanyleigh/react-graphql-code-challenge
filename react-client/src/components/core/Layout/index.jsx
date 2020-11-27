@@ -4,13 +4,13 @@ import Header from "../Header";
 import Footer from "../Footer";
 
 const Layout = props => (
-  <React.Fragment>
+  <div className={styles.screen}>
     <Header />
-    <main>
+    <main className={styles.main}>
       <div className={styles.layout}>{props.children}</div>
     </main>
     <Footer />
-  </React.Fragment>
+  </div>
 );
 
 export default Layout;
