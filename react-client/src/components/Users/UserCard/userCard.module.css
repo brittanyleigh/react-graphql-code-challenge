@@ -3,19 +3,40 @@
   margin-top: .5rem;
 }
 
-.red {
+.vertical {
+  vertical-align: middle;
+}
+
+.name_blue {
   border-bottom: solid 5px #309cf1;
   composes: name
 }
-.green {
+.name_yellow {
   border-bottom: solid 5px #F4A031;
   composes: name
 }
-.yellow {
+.name_red {
   border-bottom: solid 5px #ED462F;
   composes: name
 }
-.blue {
+.name_green {
   border-bottom: solid 5px #54B45E;
   composes: name
+}
+
+.icon_blue {
+  color: #309cf1;
+  composes: vertical
+}
+.icon_yellow {
+  color: #F4A031;
+  composes: vertical
+}
+.icon_red {
+  color: #ED462F;
+  composes: vertical
+}
+.icon_green {
+  color: #54B45E;
+  composes: vertical
 }
