@@ -1,0 +1,9 @@
+.header {
+  background: #eee;
+  text-align: center;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
