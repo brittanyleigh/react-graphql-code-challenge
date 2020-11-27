@@ -1,6 +1,9 @@
 import React from "react";
 import { Query } from "react-apollo";
 import { gql } from "apollo-boost";
+import UserCard from "./UserCard";
+import ErrorCard from "../core/ErrorCard";
+import LoadingCard from "../core/LoadingCard";
 
 const GET_USERS = gql`
   query users {
@@ -16,14 +19,12 @@ const GET_USERS = gql`
 const Users = () => (
   <Query query={GET_USERS}>
     {({ loading, error, data }) => {
-      if (loading) return <div>Loading...</div>;
-      if (error) return <div>Error :(</div>;
       console.log(data);
-      return (
-        <div>
-          <h1>Hello World</h1>
-        </div>
-      );
+      if (loading) return <LoadingCard />;
+      if (error) return <ErrorCard />;
+      return data.users.map(user => {
+        return <UserCard data={user} key={user.id} />;
+      });
     }}
   </Query>
 );

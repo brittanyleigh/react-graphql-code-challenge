@@ -1,7 +1,8 @@
 import React from "react";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
-import Users from "./Users";
+import Layout from "./components/core/Layout";
+import Users from "./components/Users";
 
 const client = new ApolloClient({
   uri: "http://localhost:4000"
@@ -9,7 +10,9 @@ const client = new ApolloClient({
 
 const App = () => (
   <ApolloProvider client={client}>
-    <Users />
+    <Layout>
+      <Users />
+    </Layout>
   </ApolloProvider>
 );
 
