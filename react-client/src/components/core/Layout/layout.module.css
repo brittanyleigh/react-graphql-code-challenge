@@ -1,4 +1,4 @@
-.container {
-  max-width: 1024px;
-  margin: 0 auto;
+.layout {
+  composes: sans from "../../../styles/shared.module.css";
+  composes: container from "../../../styles/shared.module.css";
 }

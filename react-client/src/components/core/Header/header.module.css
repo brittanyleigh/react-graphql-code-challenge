@@ -1,9 +1,12 @@
 .header {
-  background: #eee;
+  background: #309CF1;
+  color: #fff;
   text-align: center;
+  padding: 1rem;
+  composes: sans from "../../../styles/shared.module.css";
+  font-size: 1.5rem;
 }
 
 .container {
-  max-width: 1024px;
-  margin: 0 auto;
+  composes: container from "../../../styles/shared.module.css";
 }

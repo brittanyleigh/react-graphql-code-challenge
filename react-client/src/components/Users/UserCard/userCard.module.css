@@ -1,0 +1,21 @@
+.name {
+  padding-bottom: 1rem;
+  margin-top: .5rem;
+}
+
+.red {
+  border-bottom: solid 5px #309cf1;
+  composes: name
+}
+.green {
+  border-bottom: solid 5px #F4A031;
+  composes: name
+}
+.yellow {
+  border-bottom: solid 5px #ED462F;
+  composes: name
+}
+.blue {
+  border-bottom: solid 5px #54B45E;
+  composes: name
+}

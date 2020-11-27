@@ -1,9 +1,19 @@
 .footer {
-  background: #eee;
+  background: #54B45E;
+  color: #fff;
   text-align: center;
+  padding: 1rem;
+  composes: sans from "../../../styles/shared.module.css";
 }
 
 .container {
-  max-width: 1024px;
-  margin: 0 auto;
+  composes: container from "../../../styles/shared.module.css"
+}
+
+.link {
+  color: #302c43;
+}
+
+.link:hover {
+  color: #fff;
 }
